@@ -31,7 +31,27 @@ namespace TP1_GRUPO_18
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
+            // Verificar si hay elementos seleccionados
+            if (lbNombresAgregados.SelectedItems.Count > 0)
+            {
+                // Crear una lista de los ítems seleccionados para eliminar
+                List<string> itemsSeleccionados = new List<string>();
 
+                foreach (string item in lbNombresAgregados.SelectedItems)
+                {
+                    itemsSeleccionados.Add(item);
+                }
+
+                // Eliminar los ítems seleccionados
+                foreach (string item in itemsSeleccionados)
+                {
+                    lbNombresAgregados.Items.Remove(item);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar al menos un ítem para eliminar", "Atención");
+            }
         }
 
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)

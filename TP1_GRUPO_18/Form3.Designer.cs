@@ -129,6 +129,7 @@
             this.lbNombresAgregados.FormattingEnabled = true;
             this.lbNombresAgregados.Location = new System.Drawing.Point(17, 25);
             this.lbNombresAgregados.Name = "lbNombresAgregados";
+            this.lbNombresAgregados.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lbNombresAgregados.Size = new System.Drawing.Size(224, 316);
             this.lbNombresAgregados.TabIndex = 0;
             // 

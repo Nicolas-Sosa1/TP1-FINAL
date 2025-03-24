@@ -16,8 +16,7 @@ namespace TP1_GRUPO_18
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            FormPrincipal formPrincipal = new FormPrincipal();
-            Application.Run(new FormEjercicio3(formPrincipal));
+            Application.Run(new FormPrincipal());
         }
     }
 }
